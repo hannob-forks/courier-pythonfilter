@@ -43,6 +43,10 @@ def drop(cf, df):
     os.rename(df, qdf)
 
 
+
+
+
+
 def search(auth, ip, sender):
     for (dirpath, dirnames, filenames) in os.walk(os.path.join(courier.config.localstatedir, 'msgs')):
         for c in filenames:

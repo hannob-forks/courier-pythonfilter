@@ -21,7 +21,7 @@ import time
 import urllib.parse
 
 
-def try_decode(value):
+def try_decode(value   ):
     """Return a string decoded from value, or description of malformed UTF-8"""
     try:
         return value.strip().decode('utf-8')
@@ -31,7 +31,7 @@ def try_decode(value):
         )
 
 
-def get_lines(control_paths, key, max_lines=0):
+def get_lines(control_paths,    key, max_lines = 0):
     """Return a list of values in the control_paths matching key.
 
     "key" should be a one character string.  See the "Control Records"
